@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Destinations — Explore India</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Explore India — Destination guides, best time to visit, how to reach and highlights." />
+
+  <!-- core site CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- page-specific CSS -->
+  <link rel="stylesheet" href="destinations.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Explore India</div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" aria-current="page">Destinations</a>
+        <a href="itineraries.html">Itineraries</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <a href="itineraries.html" class="btn btn-primary header-cta">Plan a Trip</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page header -->
+    <section class="dest-page-header">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> <span class="sep">›</span> <span>Destinations</span>
+        </div>
+
+        <h1>Destinations</h1>
+        <p class="lead">Handpicked destination guides across India. Click a region or search to filter the list.</p>
+
+        <!-- Filters & Search -->
+        <div class="filters">
+          <button class="filter-pill active-filter" data-filter="all">All</button>
+          <button class="filter-pill" data-filter="spiritual">Spiritual</button>
+          <button class="filter-pill" data-filter="hill">Hill</button>
+          <button class="filter-pill" data-filter="beach">Beach</button>
+          <button class="filter-pill" data-filter="city">City</button>
+          <button class="filter-pill" data-filter="heritage">Heritage</button>
+
+          <input class="filter-search" type="search" placeholder="Search destinations" aria-label="Search destinations" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore by Region (cards) -->
+    <section class="categories">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Explore by Region</h2>
+          <p>Start with the part of India that excites you most.</p>
+        </div>
+
+        <div class="categories-grid">
+          <!-- North -->
+          <article class="category-card">
+            <div class="category-image north-india" style="background-image:url('images/north-india.jpg')"></div>
+            <div class="category-body">
+              <h3>North India</h3>
+              <p>Himalayas, Ladakh, Himachal, Uttarakhand, Delhi.</p>
+              <div style="margin-top:0.6rem;">
+                <button class="filter-pill" data-filter="north">View places</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- South -->
+          <article class="category-card">
+            <div class="category-image south-india" style="background-image:url('images/south-india.jpg')"></div>
+            <div class="category-body">
+              <h3>South India</h3>
+              <p>Kerala backwaters, temples, and coastal towns.</p>
+              <div style="margin-top:0.6rem;">
+                <button class="filter-pill" data-filter="south">View places</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- East -->
+          <article class="category-card">
+            <div class="category-image east-india" style="background-image:url('images/east-india.jpg')"></div>
+            <div class="category-body">
+              <h3>East India</h3>
+              <p>Meghalaya, Sikkim, Bengal, and tea gardens.</p>
+              <div style="margin-top:0.6rem;">
+                <button class="filter-pill" data-filter="east">View places</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- West -->
+          <article class="category-card">
+            <div class="category-image west-india" style="background-image:url('images/west-india.jpg')"></div>
+            <div class="category-body">
+              <h3>West India</h3>
+              <p>Rajasthan forts, Gujarat culture, and Goa beaches.</p>
+              <div style="margin-top:0.6rem;">
+                <button class="filter-pill" data-filter="west">View places</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured / full destinations grid -->
+    <section class="destinations-list">
+      <div class="container">
+        <div class="section-heading">
+          <h2>All Destinations</h2>
+          <p>A complete list across regions. Use filters or search to narrow results.</p>
+        </div>
+
+        <div class="dest-list-grid">
+          <!-- NORTH REGION -->
+          <article class="destination-card" data-region="north" data-category="hill">
+            <a class="card-link" href="destinations/ladakh.html">
+              <img src="images/ladakh.jpg" alt="Ladakh landscape" loading="lazy" />
+              <div class="destination-body">
+                <h3>Ladakh</h3>
+                <p class="short">High-altitude desert, monasteries, dramatic passes and stark scenery.</p>
+                <div class="meta"><span class="pill">Best: Jun–Sep</span><span class="pill">Adventure</span></div>
+                <div class="card-footer"><span class="small">How to reach: Leh (air)</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="north" data-category="hill">
+            <a class="card-link" href="destinations/pangong.html">
+              <img src="images/pangong-lake.jpg" alt="Pangong Lake blue waters" loading="lazy" />
+              <div class="destination-body">
+                <h3>Pangong Lake</h3>
+                <p class="short">Blue high-altitude lake near Leh. Stunning colors and remote camps.</p>
+                <div class="meta"><span class="pill">Best: Apr–Jun</span><span class="pill">Adventure</span></div>
+                <div class="card-footer"><span class="small">Permit required</span></div>
+              </div>
+            </a>
+          </article>
+          
+          <article class="destination-card" data-region="north" data-category="city">
+            <a class="card-link" href="destinations/manali.html">
+              <img src="images/manali.jpg" alt="Manali valleys" loading="lazy" />
+              <div class="destination-body">
+                <h3>Manali</h3>
+                <p class="short">Himalayan gateway for treks, snow and river sports. Popular with backpackers.</p>
+                <div class="meta"><span class="pill">Best: Mar–Jun</span><span class="pill">Mountains</span></div>
+                <div class="card-footer"><span class="small">How to reach: Kullu-Manali road</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="north" data-category="spiritual">
+            <a class="card-link" href="destinations/varanasi.html">
+              <img src="images/varanasi.jpg" alt="Varanasi Ghats" loading="lazy" />
+              <div class="destination-body">
+              <h3>Varanasi</h3>
+              <p class="short">Spiritual capital of India. Ghats, Ganga Aarti, temples and ancient culture.</p>
+              <div class="meta">
+              <span class="pill">All year</span>
+              <span class="pill">Spiritual</span>
+              </div>
+              <div class="card-footer">
+              <span class="small">How to reach: Lal Bahadur Shastri Airport, major rail connections</span>
+              </div>
+              </diV>
+            </a>
+          </article>
+
+
+          <article class="destination-card" data-region="north" data-category="hill">
+            <a class="card-link" href="destinations/shimla.html">
+              <img src="images/shimla.jpg" alt="Shimla hills" loading="lazy" />
+              <div class="destination-body">
+                <h3>Shimla</h3>
+                <p class="short">Colonial hill station, toy train rides and scenic viewpoints.</p>
+                <div class="meta"><span class="pill">Best: Mar–Jun, Sep–Nov</span><span class="pill">Hill Station</span></div>
+                <div class="card-footer"><span class="small">How to reach: Kalka-Shimla toy train</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="north">
+            <a class="card-link" href="destinations/rishikesh.html" data-category="spiritual">
+              <img src="images/rishikesh.jpg" alt="Rishikesh Ganges and yoga" loading="lazy" />
+              <div class="destination-body">
+                <h3>Rishikesh</h3>
+                <p class="short">Yoga capital, river rafting and pilgrimage on the Ganges.</p>
+                <div class="meta"><span class="pill">Best: Sep–Nov, Feb–May</span><span class="pill">Spiritual</span></div>
+                <div class="card-footer"><span class="small">How to reach: Dehradun (nearby)</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="north" data-category="city">
+            <a class="card-link" href="destinations/delhi.html">
+              <img src="images/delhi.jpg" alt="India Gate and New Delhi" loading="lazy" />
+              <div class="destination-body">
+                <h3>Delhi</h3>
+                <p class="short">Capital city. Monuments, markets, museums and diverse cuisine.</p>
+                <div class="meta"><span class="pill">All year</span><span class="pill">City</span></div>
+                <div class="card-footer"><span class="small">How to reach: Major airports and rail hub</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="north" data-category="spiritual">
+            <a class="card-link" href="destinations/amritsar.html">
+              <img src="images/amritsar.jpg" alt="Golden Temple Amritsar" loading="lazy" />
+              <div class="destination-body">
+                <h3>Amritsar</h3>
+                <p class="short">Home to the Golden Temple and rich Sikh history and food scene.</p>
+                <div class="meta"><span class="pill">Best: Oct–Mar</span><span class="pill">Culture</span></div>
+                <div class="card-footer"><span class="small">How to reach: Amritsar Airport / Rail</span></div>
+              </div>
+            </a>
+          </article>
+
+          <!-- SOUTH REGION -->
+          <article class="destination-card" data-region="south" data-category="beach">
+            <a class="card-link" href="destinations/kerala.html">
+              <img src="images/kerala.jpg" alt="Kerala backwaters" loading="lazy" />
+              <div class="destination-body">
+                <h3>Kerala (Alleppey)</h3>
+                <p class="short">Backwaters, houseboats, spices and calm canals.</p>
+                <div class="meta"><span class="pill">Best: Nov–Feb</span><span class="pill">Backwaters</span></div>
+                <div class="card-footer"><span class="small">How to reach: Kochi, Alleppey</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="south" data-category="beach">
+            <a class="card-link" href="destinations/kochi.html">
+              <img src="images/kochi.jpg" alt="Kochi fort and waterfront" loading="lazy" />
+              <div class="destination-body">
+                <h3>Kochi</h3>
+                <p class="short">Historic port city with colonial forts, art and seafood.</p>
+                <div class="meta"><span class="pill">Best: Oct–Mar</span><span class="pill">History</span></div>
+                <div class="card-footer"><span class="small">How to reach: Kochi Airport</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="south" data-category="hill">
+            <a class="card-link" href="destinations/ooty.html">
+              <img src="images/ooty.jpg" alt="Ooty hills and tea gardens" loading="lazy" />
+              <div class="destination-body">
+                <h3>Ooty</h3>
+                <p class="short">Nilgiri hill station, toy train and tea gardens.</p>
+                <div class="meta"><span class="pill">Best: Mar–Jun</span><span class="pill">Hill Station</span></div>
+                <div class="card-footer"><span class="small">How to reach: Coimbatore then road</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="south" data-category="heritage">
+            <a class="card-link" href="destinations/mysore.html">
+              <img src="images/mysore.jpg" alt="Mysore palace at night" loading="lazy" />
+              <div class="destination-body">
+                <h3>Mysore</h3>
+                <p class="short">Palaces, silk markets and Chamundi hills.</p>
+                <div class="meta"><span class="pill">Best: Oct–Mar</span><span class="pill">Heritage</span></div>
+                <div class="card-footer"><span class="small">How to reach: Mysore / Bangalore</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="south" data-category="heritage>
+            <a class="card-link" href="destinations/hampi.html">
+              <img src="images/hampi.jpg" alt="Hampi ruins and boulders" loading="lazy" />
+              <div class="destination-body">
+                <h3>Hampi</h3>
+                <p class="short">UNESCO heritage of ruins, boulders and ancient temples.</p>
+                <div class="meta"><span class="pill">Best: Oct–Feb</span><span class="pill">Heritage</span></div>
+                <div class="card-footer"><span class="small">How to reach: Hospet</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="south" data-category="beach">
+            <a class="card-link" href="destinations/pondicherry.html">
+              <img src="images/pondicherry.jpg" alt="Pondicherry French quarter" loading="lazy" />
+              <div class="destination-body">
+                <h3>Pondicherry</h3>
+                <p class="short">French quarters, coastal promenades and café culture.</p>
+                <div class="meta"><span class="pill">Best: Oct–Mar</span><span class="pill">Coastal</span></div>
+                <div class="card-footer"><span class="small">How to reach: Chennai then road</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="south" data-category="beach">
+            <a class="card-link" href="destinations/kanyakumari.html">
+              <img src="images/kanyakumari.jpg" alt="Kanyakumari sunset" loading="lazy" />
+              <div class="destination-body">
+                <h3>Kanyakumari</h3>
+                <p class="short">Southern tip of India. Sunrise and sunset over the waters.</p>
+                <div class="meta"><span class="pill">Best: Oct–Mar</span><span class="pill">Coastal</span></div>
+                <div class="card-footer"><span class="small">How to reach: Trivandrum then road</span></div>
+              </div>
+            </a>
+          </article>
+
+          <!-- EAST REGION -->
+          <article class="destination-card" data-region="east" data-category="hill">
+            <a class="card-link" href="destinations/cherrapunji.html">
+              <img src="images/cherrapunji.jpg" alt="Cherrapunji waterfalls" loading="lazy" />
+              <div class="destination-body">
+                <h3>Cherrapunji</h3>
+                <p class="short">Living root bridges, waterfalls and dense green valleys.</p>
+                <div class="meta"><span class="pill">Best: Sep–May</span><span class="pill">Nature</span></div>
+                <div class="card-footer"><span class="small">How to reach: Shillong</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="east" data-category="hill">
+            <a class="card-link" href="destinations/darjeeling.html">
+              <img src="images/darjeeling.jpg" alt="Darjeeling tea gardens" loading="lazy" />
+              <div class="destination-body">
+                <h3>Darjeeling</h3>
+                <p class="short">Tea gardens, toy train and mountain views including Kanchenjunga.</p>
+                <div class="meta"><span class="pill">Best: Mar–May</span><span class="pill">Hill Station</span></div>
+                <div class="card-footer"><span class="small">How to reach: Bagdogra then road</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="east" data-category="hill">
+            <a class="card-link" href="destinations/gangtok.html">
+              <img src="images/gangtok.jpg" alt="Gangtok town and hills" loading="lazy" />
+              <div class="destination-body">
+                <h3>Gangtok</h3>
+                <p class="short">Gateway to Sikkim, monasteries and mountain treks.</p>
+                <div class="meta"><span class="pill">Best: Mar–Jun, Sep–Nov</span><span class="pill">Mountains</span></div>
+                <div class="card-footer"><span class="small">How to reach: Bagdogra then road</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="east" data-category="beach">
+            <a class="card-link" href="destinations/sundarbans.html">
+              <img src="images/sundarbans.jpg" alt="Sundarbans mangrove forest" loading="lazy" />
+              <div class="destination-body">
+                <h3>Sundarbans</h3>
+                <p class="short">Largest mangrove forest, unique wildlife and delta tours.</p>
+                <div class="meta"><span class="pill">Best: Oct–Feb</span><span class="pill">Wildlife</span></div>
+                <div class="card-footer"><span class="small">How to reach: Kolkata / local boats</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="east" data-category="city">
+            <a class="card-link" href="destinations/kolkata.html">
+              <img src="images/kolkata.jpg" alt="Kolkata Victoria Memorial" loading="lazy" />
+              <div class="destination-body">
+                <h3>Kolkata</h3>
+                <p class="short">Culture, colonial architecture, literature and street food.</p>
+                <div class="meta"><span class="pill">Best: Oct–Feb</span><span class="pill">City</span></div>
+                <div class="card-footer"><span class="small">How to reach: Kolkata Airport / Rail</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="east" data-category="spiritual">
+            <a class="card-link" href="destinations/puri.html">
+              <img src="images/puri.jpg" alt="Puri Jagannath temple and beach" loading="lazy" />
+              <div class="destination-body">
+                <h3>Puri</h3>
+                <p class="short">Temple city and beach; part of Odisha's cultural circuit.</p>
+                <div class="meta"><span class="pill">Best: Oct–Feb</span><span class="pill">Spiritual</span></div>
+                <div class="card-footer"><span class="small">How to reach: Bhubaneswar then road</span></div>
+              </div>
+            </a>
+          </article>
+
+          <!-- WEST REGION -->
+          <article class="destination-card" data-region="west" data-category="beach">
+            <a class="card-link" href="destinations/goa.html">
+              <img src="images/goa.jpg" alt="Goa beach at sunset" loading="lazy" />
+              <div class="destination-body">
+                <h3>Goa</h3>
+                <p class="short">Beaches, nightlife, seafood and relaxed coastal life.</p>
+                <div class="meta"><span class="pill">Best: Nov–Feb</span><span class="pill">Beaches</span></div>
+                <div class="card-footer"><span class="small">How to reach: Dabolim Airport</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="west" data-category="heritage">
+            <a class="card-link" href="destinations/udaipur.html">
+              <img src="images/udaipur.jpg" alt="Udaipur Lake Pichola" loading="lazy" />
+              <div class="destination-body">
+                <h3>Udaipur</h3>
+                <p class="short">Lakeside palaces, romantic boat rides and heritage hotels.</p>
+                <div class="meta"><span class="pill">Best: Oct–Mar</span><span class="pill">Heritage</span></div>
+                <div class="card-footer"><span class="small">How to reach: Maharana Pratap Airport</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="west" data-category="heritage">
+            <a class="card-link" href="destinations/jaipur.html">
+              <img src="images/jaipur.jpg" alt="Jaipur Amber Fort" loading="lazy" />
+              <div class="destination-body">
+                <h3>Jaipur</h3>
+                <p class="short">Pink City, forts, bazaars and royal cuisine.</p>
+                <div class="meta"><span class="pill">Best: Oct–Mar</span><span class="pill">Heritage</span></div>
+                <div class="card-footer"><span class="small">How to reach: Jaipur Airport</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="west" data-category="heritage">
+            <a class="card-link" href="destinations/jaisalmer.html">
+              <img src="images/jaisalmer.jpg" alt="Jaisalmer golden fort" loading="lazy" />
+              <div class="destination-body">
+                <h3>Jaisalmer</h3>
+                <p class="short">Golden desert city, forts and desert safaris.</p>
+                <div class="meta"><span class="pill">Best: Oct–Feb</span><span class="pill">Desert</span></div>
+                <div class="card-footer"><span class="small">How to reach: Jaisalmer / Jodhpur</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="west" data-category="heritage">
+            <a class="card-link" href="destinations/rann.html">
+              <img src="images/rann.jpg" alt="Rann of Kutch white desert" loading="lazy" />
+              <div class="destination-body">
+                <h3>Rann of Kutch</h3>
+                <p class="short">White salt marshes, seasonal festivals and wide horizons.</p>
+                <div class="meta"><span class="pill">Best: Nov–Feb</span><span class="pill">Festival</span></div>
+                <div class="card-footer"><span class="small">How to reach: Bhuj</span></div>
+              </div>
+            </a>
+          </article>
+
+          <article class="destination-card" data-region="west">
+            <a class="card-link" href="destinations/ahmedabad.html" data-category="city">
+              <img src="images/ahmedabad.jpg" alt="Ahmedabad heritage haveli" loading="lazy" />
+              <div class="destination-body">
+                <h3>Ahmedabad</h3>
+                <p class="short">Historic Ahmedabad, Sabarmati riverfront and Gujarati cuisine.</p>
+                <div class="meta"><span class="pill">Best: Oct–Mar</span><span class="pill">City</span></div>
+                <div class="card-footer"><span class="small">How to reach: Ahmedabad Airport</span></div>
+              </div>
+            </a>
+          </article>
+       
+        </div> <!-- /.dest-list-grid -->
+           <div class="load-more-wrap">
+      <button id="loadMoreBtn" class="btn btn-primary"> Load more destinations</button>
+    </div>
+      </div> <!-- /.container -->
+       
+    </section>
+
+    <!-- Travel tips CTA -->
+    <section class="dest-cta">
+      <div class="container centered">
+        <h2 class="tips-style-combo">Travel Tips for India</h2>
+        <p class="muted">Short practical tips that apply across the destinations listed here.</p>
+        <div class="tips-cta">
+          <ul class="tips-compact">
+            <li>Carry photocopies of ID and offline maps.</li>
+            <li>Try local food from busy stalls but drink packaged water.</li>
+            <li>Book permits ahead for restricted areas (Ladakh, parts of NE India).</li>
+            <li>Respect local customs at religious sites.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-about">
+        <h3>Explore India</h3>
+        <p>A simple guide to Indian destinations, built for travelers who want clarity without overload.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="destinations.html">Destinations</a>
+        <a href="itineraries.html">Itineraries</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      </div>
+
+      <div class="footer-meta">
+        <h4>Project</h4>
+        <p>Built by: Team Explore India</p>
+        <p>Contact: <a href="mailto:rajaadhikary05032005@gmail.com">rajaadhikary05032005@gmail.com</a></p>
+        <p>© 2025 Explore India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: filtering + load-more -->
+  <script src="destinations.js"></script>
+  <script src="loadmore.js"></script>
+</body>
+</html>

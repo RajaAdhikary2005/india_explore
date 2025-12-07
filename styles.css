@@ -1,0 +1,346 @@
+/* =========================
+   Explore India — styles.css
+   Updated: primary -> green, stronger box-shadows
+   ========================= */
+
+/* ====== Base Reset ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+html, body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #f7f7f9;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* ====== Layout Helpers ====== */
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+.section-heading { text-align: left; margin-bottom: 1.5rem; }
+.section-heading h2 { font-size: 1.8rem; margin-bottom: 0.4rem; }
+.section-heading p { font-size: 0.95rem; color: #6b7280; }
+
+/* ====== Buttons ====== */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, color 0.15s ease;
+  text-align: center;
+  line-height: 1;
+}
+.btn:focus { outline: none; }
+.btn:focus-visible { box-shadow: 0 0 0 6px rgba(22,163,74,0.14); }
+
+/* Primary color and variables */
+:root {
+  --green: #16a34a;               /* primary (replaced blue) */
+  --green-rgb: 22,163,74;
+  --hero-overlay-start: rgba(15,23,42,0.92);
+  --hero-overlay-end: rgba(15,23,42,0.55);
+  --bg-main: #f7f7f9;
+  --bg-section: #f9fafb;
+  --card-border: #e5e7eb;
+  --muted: #6b7280;
+  --text-strong: #111827;
+  --footer-bg: #111827;
+}
+
+/* Default primary button used across site */
+.btn-primary {
+  background: var(--green);
+  color: #fff;
+  border-color: transparent;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 46px rgba(15,23,42,0.16), 0 6px 22px rgba(var(--green-rgb),0.14);
+}
+.btn-outline {
+  background: transparent;
+  border-color: #d1d5db;
+  color: var(--text-strong);
+}
+.btn-outline:hover { background: #e5e7eb; }
+
+/* ====== Links / Tags ====== */
+.link { font-size: 0.9rem; font-weight: 600; color: var(--green); }
+.link:hover { text-decoration: underline; }
+.tag-row { display:flex; flex-wrap:wrap; gap:0.4rem; margin-top:0.45rem; }
+.tag {
+  font-size:0.75rem; padding:0.22rem 0.6rem; border-radius:999px;
+  background: var(--card-border); color:#374151;
+}
+
+/* ====== Header ====== */
+.site-header {
+  position: sticky; top: 0; z-index: 30;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--card-border);
+}
+.header-inner {
+  display:flex; align-items:center; justify-content:space-between;
+  height: 72px; gap:1rem; padding: 0 0.25rem;
+}
+.logo {
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-strong);
+}
+.main-nav { display:flex; gap:1rem; font-size:0.95rem; align-items:center; }
+.main-nav a { padding: 0.35rem 0.55rem; border-radius: 8px; color: #111827; }
+.main-nav a:hover { background: #f1f5f9; }
+
+/* Right CTA in header */
+.header-cta { margin-left: 0.5rem; }
+
+/* ====== Hero ====== */
+.hero {
+  position: relative;
+  min-height: 65vh;
+  background-image: url("images/hero-india.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: block;
+}
+.hero-overlay {
+  width: 100%; height: 100%;
+  background: linear-gradient(to right, var(--hero-overlay-start), var(--hero-overlay-end));
+  display:flex; align-items:center;
+}
+.hero-content {
+  padding: 4.5rem 0 4rem;
+  max-width: 560px;
+}
+
+/* Hide chip (removed) */
+.hero-chip { display: none !important; }
+
+/* Hero title — larger and attractive */
+.hero h1 {
+  font-size: 3.1rem;
+  line-height: 1.05;
+  margin-bottom: 0.6rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  text-shadow: 0 8px 34px rgba(0,0,0,0.5);
+}
+.hero p {
+  font-size: 1.03rem;
+  color: rgba(235,235,235,0.95);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+/* HERO Buttons: both appear identical initially.
+   They highlight green on hover/focus/active.
+*/
+.hero-actions { display:flex; gap:0.8rem; flex-wrap:wrap; align-items:center; }
+
+/* make both hero buttons visually the same by default */
+.hero-actions .btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.38);
+  padding: 0.65rem 1.25rem;
+  font-weight: 700;
+}
+
+/* Hover / focus / active -> green with stronger glow */
+.hero-actions .btn:hover,
+.hero-actions .btn:focus-visible,
+.hero-actions .btn:active {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 20px 50px rgba(15,23,42,0.16), 0 8px 30px rgba(var(--green-rgb),0.18);
+}
+.hero-actions .btn:focus-visible { box-shadow: 0 0 0 8px rgba(var(--green-rgb),0.10); }
+
+/* ====== Highlights ====== */
+.highlights { padding: 3rem 0; background: var(--bg-section); }
+.highlights-grid {
+  display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:1rem;
+}
+.highlight-card {
+  padding: 1rem; border-radius: .9rem; border: 1px solid var(--card-border);
+  background: #ffffff; font-size:0.95rem;
+  box-shadow: 0 14px 36px rgba(15,23,42,0.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 60px rgba(15,23,42,0.14);
+}
+.highlight-card h3 { font-size:1rem; margin-bottom:0.3rem; }
+
+/* ====== Categories ====== */
+.categories { padding: 3rem 0; }
+.categories-grid {
+  display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:1.25rem;
+}
+.category-card {
+  border-radius: 1rem; overflow:hidden; background:#fff; border:1px solid var(--card-border);
+  display:flex; flex-direction: column; transition: transform .18s ease, box-shadow .18s ease;
+  box-shadow: 0 16px 40px rgba(15,23,42,0.06);
+}
+.category-card:hover {
+  transform: translateY(-6px); box-shadow: 0 36px 80px rgba(15,23,42,0.16);
+}
+.category-image { height: 150px; background-size: cover; background-position: center; }
+.category-body { padding: 0.9rem 1rem 1rem; }
+
+/* ====== Featured Destinations ====== */
+.featured { padding: 3rem 0; }
+.destinations-grid {
+  display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:1.25rem;
+}
+.destination-card {
+  border-radius: 1rem; overflow:hidden; background:#fff; border:1px solid var(--card-border);
+  display:flex; flex-direction: column; transition: transform .18s ease, box-shadow .18s ease;
+  box-shadow: 0 16px 40px rgba(15,23,42,0.06);
+}
+.destination-card img { height: 190px; width:100%; object-fit:cover; display:block; }
+.destination-card:hover {
+  transform: translateY(-6px); box-shadow: 0 36px 80px rgba(15,23,42,0.16);
+}
+.destination-body { padding: 0.9rem 1rem 1rem; }
+.destination-body h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
+.destination-body p { font-size: 0.9rem; color: #6b7280; }
+
+/* ====== Itineraries ====== */
+.itineraries { padding: 3rem 0; background: var(--bg-section); }
+.itineraries-grid { display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:1.1rem; }
+.itinerary-card {
+  padding: 1rem; border-radius: 1rem; border: 1px solid var(--card-border); background:#fff;
+  transition: transform .18s ease, box-shadow .18s ease;
+  box-shadow: 0 14px 36px rgba(15,23,42,0.06);
+}
+.itinerary-card:hover { transform: translateY(-5px); box-shadow: 0 34px 70px rgba(15,23,42,0.14); }
+.itinerary-card h3 { font-size:1rem; margin-bottom:0.4rem; }
+.itinerary-card .duration { margin-top:0.5rem; font-size:0.85rem; color:#4b5563; }
+
+/* ====== Travel Tips (redesigned card style) ====== */
+.travel-tips { padding: 3.2rem 0; background: linear-gradient(135deg, #f9fafb, #eef2f6); }
+.travel-tips .section-heading h2 { font-size: 1.9rem; }
+.tips-layout { display:grid; grid-template-columns: 1.1fr 1.6fr; gap: 1.75rem; align-items:flex-start; }
+.tips-text p { font-size: 1rem; color: #374151; line-height: 1.6; }
+.tips-list { list-style:none; padding:0; margin:0; display:grid; gap:0.9rem; }
+.tips-list li {
+  position:relative; padding:0.95rem 1rem 0.95rem 2.6rem; border-radius:0.9rem;
+  background:#fff; border:1px solid var(--card-border); font-size:0.94rem; color:#111827;
+  box-shadow: 0 18px 44px rgba(15,23,42,0.08);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.tips-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 36px 80px rgba(15,23,42,0.14);
+}
+.tips-list li::before {
+  content:""; position:absolute; left:1.05rem; top:50%; transform:translateY(-50%); width:12px; height:12px; border-radius:999px; background:var(--green);
+}
+
+/* ====== Gallery ====== */
+.gallery {
+  padding: 3rem 0 3.5rem;
+  background: var(--bg-section);
+}
+
+/* Perfect vertical + horizontal alignment */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;              /* space between photos */
+}
+
+/* Each image becomes a uniform card */
+.gallery-grid img {
+  width: 100%;
+  height: 220px;            /* << FIXED HEIGHT → perfect vertical alignment */
+  object-fit: cover;        /* crop to fit uniformly */
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 30px rgba(15,23,42,0.06);
+  border: 1px solid rgba(15,23,42,0.03);
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 40px rgba(15,23,42,0.10);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1000px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid img {
+    height: 180px;          /* reduce height for mobile */
+  }
+}
+
+
+.gallery-grid img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 90px rgba(15,23,42,0.16);
+}
+
+/* ====== Footer ====== */
+.site-footer { background: var(--footer-bg); color: #e5e7eb; padding: 2.5rem 0 2rem; }
+.footer-inner { display:grid; grid-template-columns: 2fr 1fr 2fr; gap:1.5rem; font-size:0.9rem; }
+.footer-about h3 { font-size:1.1rem; margin-bottom:0.4rem; }
+.footer-links a { display:block; margin-bottom:0.25rem; color:#d1d5db; font-size:0.9rem; }
+.footer-links a:hover { color:#fff; }
+.footer-meta a { color: rgba(var(--green-rgb),1); }
+
+/* ====== Global hover shadow for card-like elements (full page feel) ====== */
+.highlight-card, .category-card, .destination-card, .itinerary-card {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.highlight-card:hover, .category-card:hover, .destination-card:hover, .itinerary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 36px 80px rgba(15,23,42,0.14);
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 992px) {
+  .highlights-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .categories-grid, .destinations-grid, .itineraries-grid, .gallery-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .tips-layout { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2.4rem; }
+}
+@media (max-width: 640px) {
+  .header-inner { flex-wrap:wrap; justify-content:space-between; height: auto; padding: .5rem 0; }
+  .main-nav { display: none; } /* replace with mobile menu as needed */
+  .hero { min-height: 60vh; }
+  .hero-content { padding: 3.2rem 0 2.6rem; }
+  .hero h1 { font-size: 1.9rem; }
+  .highlights-grid, .categories-grid, .destinations-grid, .itineraries-grid, .gallery-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+}

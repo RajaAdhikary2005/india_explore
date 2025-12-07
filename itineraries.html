@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Itineraries — Explore India</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description"
+    content="Ready-made itineraries for Delhi, Varanasi, Manali, Shimla, Ladakh, Rishikesh, Kerala and more by Team Explore India." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="itineraries.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Explore India</div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="itineraries.html" aria-current="page">Itineraries</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      </nav>
+      <a href="itineraries.html" class="btn btn-primary">Plan a trip</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="it-hero it-hero-compact">
+  <div class="container it-hero-inner">
+    <div class="it-hero-left">
+      <p class="it-label">Trip plans</p>
+      <h1 class="it-title">Itineraries for our destinations</h1>
+      <p class="it-sub">Ready-made plans. Pick a duration and open the matching guide.</p>
+    </div>
+
+    <!-- grouped badges: keep all svgs inside this wrapper -->
+    <div class="it-hero-right" aria-hidden="true">
+      <!-- compass -->
+      <svg class="hero-badge" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" stroke="#16a34a" stroke-width="1.7" />
+        <path d="M9 15 L15 9" stroke="#16a34a" stroke-width="1.7" stroke-linecap="round" />
+        <circle cx="12" cy="12" r="2" fill="#16a34a" />
+      </svg>
+
+      <!-- pin -->
+      <svg class="hero-badge" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true">
+        <path d="M12 22 C12 22 19 16 19 10 A7 7 0 0 0 5 10 C5 16 12 22 12 22 Z" stroke="#16a34a" stroke-width="1.7" fill="white"/>
+        <circle cx="12" cy="10" r="3" stroke="#16a34a" stroke-width="1.7" fill="white"/>
+      </svg>
+
+      <!-- mountain -->
+      <svg class="hero-badge" viewBox="0 0 24 24" fill="none" role="img" aria-hidden="true">
+        <path d="M3 19 L10 6 L12 10 L14 6 L21 19 Z" stroke="#16a34a" stroke-width="1.6" fill="white" />
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Filters -->
+    <section class="it-filters">
+      <div class="container">
+        <div class="filter-row">
+          <span class="filter-label">Filter by duration:</span>
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="1">1 day</button>
+          <button class="filter-btn" data-filter="2">2 days</button>
+          <button class="filter-btn" data-filter="3plus">3+ days</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itinerary cards -->
+    <section class="it-grid-section">
+      <div class="container it-grid">
+
+        <!-- MEGHALAYA -->
+        <article class="it-card" data-duration="3plus">
+          <div class="it-card-header">
+            <h2>5 Days in Meghalaya</h2>
+            <span class="pill-duration">5 days</span>
+          </div>
+          <p class="it-destination">Destination: Meghalaya (Shillong, Cherrapunji)</p>
+          <p class="it-summary">
+            Shillong, Cherrapunji, living root bridges, waterfalls and village trails in the hills of Meghalaya.
+          </p>
+          <ul class="it-points">
+            <li>Day 1: Arrive Shillong — local markets & viewpoints</li>
+            <li>Day 2: Cherrapunji waterfalls & viewpoints</li>
+            <li>Day 3: Mawlynnong & living root bridges</li>
+            <li>Day 4: Caves / village walks</li>
+            <li>Day 5: Return via Shillong</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">Nature</span>
+            <a href="destinations/meghalaya.html#itinerary" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <!-- RAJASTHAN -->
+        <article class="it-card" data-duration="3plus">
+          <div class="it-card-header">
+            <h2>7 Days in Rajasthan</h2>
+            <span class="pill-duration">7 days</span>
+          </div>
+          <p class="it-destination">Destination: Rajasthan (Jaipur, Jodhpur, Udaipur)</p>
+          <p class="it-summary">
+            Classic triangle through Jaipur, Jodhpur and Udaipur with forts, palaces and lakes.
+          </p>
+          <ul class="it-points">
+            <li>Day 1–2: Jaipur — Amber Fort, Pink City, markets</li>
+            <li>Day 3–4: Jodhpur — Mehrangarh Fort & blue lanes</li>
+            <li>Day 5–7: Udaipur — lakes, palaces and old city</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">Heritage</span>
+            <a href="destinations/rajasthan.html#itinerary" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <!-- WEEKEND VARANASI SAMPLE -->
+        <article class="it-card" data-duration="2">
+          <div class="it-card-header">
+            <h2>Weekend in Varanasi</h2>
+            <span class="pill-duration">2–3 days</span>
+          </div>
+          <p class="it-destination">Destination: Varanasi</p>
+          <p class="it-summary">
+            Compact plan focused on ghats, Ganga Aarti, local food and short walking tours.
+          </p>
+          <ul class="it-points">
+            <li>Day 1: Sunrise boat, lanes, evening Aarti</li>
+            <li>Day 2: Kashi Vishwanath, ghats, food walk</li>
+            <li>Optional Day 3: Sarnath side trip</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">Spiritual</span>
+            <a href="destinations/varanasi.html#weekend" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <!-- DELHI -->
+        <article class="it-card" data-duration="1">
+          <div class="it-card-header">
+            <h2>Delhi in 1 Day</h2>
+            <span class="pill-duration">1 day</span>
+          </div>
+          <p class="it-destination">Destination: Delhi</p>
+          <p class="it-summary">
+            India Gate, Rashtrapati Bhavan views, Humayun’s Tomb and evening at Connaught Place.
+          </p>
+          <ul class="it-points">
+            <li>Morning: India Gate & Rajpath area</li>
+            <li>Afternoon: Humayun’s Tomb, Lodhi Garden</li>
+            <li>Evening: Connaught Place and local food</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">City</span>
+            <a href="destinations/delhi.html#itinerary" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <article class="it-card" data-duration="2">
+          <div class="it-card-header">
+            <h2>Delhi 2-Day Highlights</h2>
+            <span class="pill-duration">2 days</span>
+          </div>
+          <p class="it-destination">Destination: Delhi</p>
+          <p class="it-summary">
+            Add Red Fort, Jama Masjid, Chandni Chowk and Qutub Minar for a balanced Old and New Delhi trip.
+          </p>
+          <ul class="it-points">
+            <li>Day 1: India Gate, museums, Connaught Place</li>
+            <li>Day 2: Red Fort, Jama Masjid, Chandni Chowk, Qutub Minar</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">City</span>
+            <a href="destinations/delhi.html#itinerary2" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <!-- VARANASI base itineraries -->
+        <article class="it-card" data-duration="1">
+          <div class="it-card-header">
+            <h2>Varanasi Ghats in 1 Day</h2>
+            <span class="pill-duration">1 day</span>
+          </div>
+          <p class="it-destination">Destination: Varanasi</p>
+          <p class="it-summary">
+            Sunrise boat ride, old city lanes and evening Ganga Aarti at Dashashwamedh Ghat.
+          </p>
+          <ul class="it-points">
+            <li>Sunrise: Boat on the Ganga</li>
+            <li>Day: Kashi Vishwanath area & lanes</li>
+            <li>Evening: Ganga Aarti and ghats walk</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">Spiritual</span>
+            <a href="destinations/varanasi.html#itinerary" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <article class="it-card" data-duration="2">
+          <div class="it-card-header">
+            <h2>Varanasi 2-Day Spiritual Trip</h2>
+            <span class="pill-duration">2 days</span>
+          </div>
+          <p class="it-destination">Destination: Varanasi</p>
+          <p class="it-summary">
+            Combine ghats, temples and a Sarnath side trip for a slower, more relaxed visit.
+          </p>
+          <ul class="it-points">
+            <li>Day 1: Ghats, Aarti, old city</li>
+            <li>Day 2: Sarnath and quieter ghats</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">Spiritual</span>
+            <a href="destinations/varanasi.html#itinerary2" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <!-- MANALI -->
+        <article class="it-card" data-duration="3plus">
+          <div class="it-card-header">
+            <h2>Manali 3-Day Hill Station Break</h2>
+            <span class="pill-duration">3 days</span>
+          </div>
+          <p class="it-destination">Destination: Manali</p>
+          <p class="it-summary">
+            Mall Road, Hadimba temple, Solang Valley and local cafes with basic snow-view planning.
+          </p>
+          <ul class="it-points">
+            <li>Day 1: Old Manali & Hadimba temple</li>
+            <li>Day 2: Solang Valley / snow points</li>
+            <li>Day 3: Local cafes and riverside walk</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">Hill station</span>
+            <a href="destinations/manali.html#itinerary" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <!-- SHIMLA -->
+        <article class="it-card" data-duration="2">
+          <div class="it-card-header">
+            <h2>Shimla 2-Day Classic Plan</h2>
+            <span class="pill-duration">2 days</span>
+          </div>
+          <p class="it-destination">Destination: Shimla</p>
+          <p class="it-summary">
+            Ridge, Mall Road, Jakhu temple and a half-day Kufri visit.
+          </p>
+          <ul class="it-points">
+            <li>Day 1: Ridge, Mall Road, colonial spots</li>
+            <li>Day 2: Kufri visit and viewpoints</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">Hill station</span>
+            <a href="destinations/shimla.html#itinerary" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <!-- RISHIKESH -->
+        <article class="it-card" data-duration="2">
+          <div class="it-card-header">
+            <h2>Rishikesh 2-Day Ganga & Adventure</h2>
+            <span class="pill-duration">2 days</span>
+          </div>
+          <p class="it-destination">Destination: Rishikesh</p>
+          <p class="it-summary">
+            Laxman Jhula, Ganga Aarti, river rafting (seasonal) and cafes with a view.
+          </p>
+          <ul class="it-points">
+            <li>Day 1: Jhulas, ghats, evening Aarti</li>
+            <li>Day 2: Rafting / short hikes and cafes</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">River & spiritual</span>
+            <a href="destinations/rishikesh.html#itinerary" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <!-- LADAKH -->
+        <article class="it-card" data-duration="3plus">
+          <div class="it-card-header">
+            <h2>Ladakh 5-Day High Altitude Circuit</h2>
+            <span class="pill-duration">5 days</span>
+          </div>
+          <p class="it-destination">Destination: Ladakh</p>
+          <p class="it-summary">
+            Acclimatisation in Leh, monasteries, Nubra Valley and Pangong Lake with altitude awareness.
+          </p>
+          <ul class="it-points">
+            <li>Day 1–2: Leh town & monasteries</li>
+            <li>Day 3: Nubra Valley</li>
+            <li>Day 4–5: Pangong Lake and return</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">High altitude</span>
+            <a href="destinations/ladakh.html#itinerary" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+        <!-- KERALA -->
+        <article class="it-card" data-duration="3plus">
+          <div class="it-card-header">
+            <h2>Kerala 3-Day Kochi & Backwaters</h2>
+            <span class="pill-duration">3 days</span>
+          </div>
+          <p class="it-destination">Destination: Kerala</p>
+          <p class="it-summary">
+            Fort Kochi, Mattancherry and a houseboat-style day around Alleppey backwaters.
+          </p>
+          <ul class="it-points">
+            <li>Day 1: Fort Kochi, Chinese nets, streets</li>
+            <li>Day 2: Day cruise or houseboat in backwaters</li>
+            <li>Day 3: Kochi city, cafes and shopping</li>
+          </ul>
+          <div class="it-card-footer">
+            <span class="pill pill-soft">Coast & backwaters</span>
+            <a href="destinations/kerala.html#itinerary" class="btn btn-primary">View guide</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- How to choose -->
+    <section class="it-how">
+      <div class="container">
+        <h2>How to choose the right itinerary</h2>
+        <div class="it-how-grid">
+          <article class="it-how-card">
+            <h3>1 day</h3>
+            <p>Good for quick city overviews or when you are passing through and want only the main highlights.</p>
+          </article>
+          <article class="it-how-card">
+            <h3>2 days</h3>
+            <p>Best balance for most destinations: one busy day, one slower day. Great for Delhi, Varanasi, Shimla and
+              Rishikesh.</p>
+          </article>
+          <article class="it-how-card">
+            <h3>3+ days</h3>
+            <p>Use for hill stations, Meghalaya, Rajasthan and Ladakh trips where travel time and altitude need more
+              buffer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="it-cta">
+      <div class="container it-cta-inner">
+        <div>
+          <h2>Explore destinations before you decide</h2>
+          <p>Each itinerary matches a destination page with details on how to reach, best time to visit and local tips.
+          </p>
+        </div>
+        <a href="destinations.html" class="btn btn-primary">Browse destinations</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-about">
+        <h3>Explore India</h3>
+        <p>
+          A simple guide to Indian destinations, built for travellers who want
+          clarity without overload.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="destinations.html">Destinations</a>
+        <a href="itineraries.html">Itineraries</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-meta">
+        <h4>Project</h4>
+        <p>Built by: Team Explore India</p>
+        <p>Contact: <a href="mailto:team.exploreindia@example.com">team.exploreindia@example.com</a></p>
+        <p>© <span id="year"></span> Explore India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // footer year (safe)
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+
+    // simple duration filter
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.it-card');
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-filter');
+
+        filterButtons.forEach((b) => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+
+        cards.forEach((card) => {
+          const d = card.getAttribute('data-duration');
+          if (target === 'all' || target === d || (target === '3plus' && d === '3plus')) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>

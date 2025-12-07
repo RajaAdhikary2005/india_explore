@@ -1,0 +1,431 @@
+/* =========================
+   GLOBAL FOR DEST PAGES
+   ========================= */
+
+.dest-page {
+  background: #f5f7fb;
+  color: #111827;
+}
+
+/* generic section spacing */
+
+.dest-section {
+  padding: 3rem 0;
+}
+
+.dest-section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* generic card look */
+
+.dest-card,
+.dest-overview-box,
+.highlight-card,
+.activity,
+.itinerary-card,
+.stay-card,
+.tips-box {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  transition: box-shadow 0.18s ease, transform 0.18s ease, border-color 0.18s ease;
+}
+
+.dest-card:hover,
+.dest-overview-box:hover,
+.highlight-card:hover,
+.activity:hover,
+.itinerary-card:hover,
+.stay-card:hover,
+.tips-box:hover {
+  transform: translateY(-2px);
+  border-color: #16a34a;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
+}
+
+/* simple grid helper */
+
+.dest-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.dest-hero {
+  position: relative;
+  min-height: 52vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: stretch;
+  color: #ffffff;
+}
+
+.dest-hero-overlay {
+  width: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(15, 23, 42, 0.90),
+    rgba(15, 23, 42, 0.70)
+  );
+  display: flex;
+  align-items: center;
+}
+
+.dest-hero-content {
+  max-width: 680px;
+  padding: 3.5rem 0;
+}
+
+.dest-hero-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #e5e7eb;
+  margin-bottom: 0.4rem;
+}
+
+.dest-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.45rem;
+}
+
+.dest-hero-sub {
+  font-size: 0.98rem;
+  color: rgba(249, 250, 251, 0.92);
+  max-width: 540px;
+  margin-bottom: 1.25rem;
+}
+
+.dest-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* =========================
+   FAST FACTS BAR
+   ========================= */
+
+.dest-fastfacts {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1.25rem 0;
+}
+
+.fastfacts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.9rem;
+}
+
+.fact-item span {
+  display: block;
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-bottom: 0.1rem;
+}
+
+.fact-item strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* =========================
+   OVERVIEW
+   ========================= */
+
+.dest-two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.dest-overview-box {
+  padding: 1.1rem 1.2rem;
+}
+
+.dest-overview-box h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+.dest-overview-box ul {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.92rem;
+  color: #4b5563;
+}
+
+/* =========================
+   HIGHLIGHTS
+   ========================= */
+
+.dest-highlights-grid {
+    background: #eef2ff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+.dest-highlight{
+     background: #eef2ff;
+}
+.highlight-card {
+  padding: 1rem 1.1rem;
+}
+
+.highlight-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.highlight-card p {
+  font-size: 0.92rem;
+  color: #4b5563;
+}
+
+/* =========================
+   THINGS TO DO
+   ========================= */
+
+.things-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.activity {
+  padding: 1.1rem 1.2rem;
+}
+
+.activity h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.4rem;
+}
+
+.activity p {
+  font-size: 0.93rem;
+  color: #4b5563;
+}
+
+.activity ul {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   ITINERARIES
+   ========================= */
+
+.dest-itineraries {
+  background: #eef2ff;
+}
+
+.dest-itineraries .section-note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.itineraries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.itinerary-card {
+  padding: 1.1rem 1.2rem;
+}
+
+.itinerary-card .duration {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.itinerary-card ul {
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.itinerary-cta {
+  margin-top: 1.6rem;
+  text-align: center;
+}
+
+/* =========================
+   WHERE TO STAY
+   ========================= */
+
+.stay-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.stay-card {
+  padding: 1.1rem 1.2rem;
+}
+
+.stay-card h3 {
+  font-size: 1.02rem;
+  margin-bottom: 0.4rem;
+}
+
+.stay-card p {
+  font-size: 0.92rem;
+  color: #4b5563;
+}
+
+.stay-card .small {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+
+
+/* =========================
+   LOCAL TIPS (MINIMAL STYLE)
+   ========================= */
+
+.dest-local-tips {
+  padding-top: 0;
+}
+
+.tips-box {
+  background: #ffffff;
+  padding: 2rem 1.8rem;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Heading minimal look */
+.tips-style-combo {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 10px;
+  background: #f9fafb;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-shadow: none;
+}
+
+/* Subtitle */
+.tips-subtext {
+  margin: 10px 0 22px;
+  color: #6b7280;
+  font-size: 0.92rem;
+}
+
+/* Tips list */
+.tips-list-home {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.tips-list-home li {
+  background: #ffffff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.05);
+  font-size: 0.9rem;
+  color: #374151;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Light hover */
+.tips-list-home li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================
+   GALLERY
+   ========================= */
+.dest-gallary{
+     background: #eef2ff; 
+}
+.gallery-grid {
+    
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 1024px) {
+  .dest-hero h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dest-section {
+    padding: 2.2rem 0;
+  }
+
+  .dest-two-col {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .dest-hero {
+    min-height: 46vh;
+  }
+
+  .dest-hero-content {
+    padding: 2.5rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .dest-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .tips-box {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .tips-style-combo {
+    font-size: 1.4rem;
+  }
+
+  .gallery-grid img {
+    height: 190px;
+  }
+}

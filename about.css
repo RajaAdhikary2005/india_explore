@@ -1,0 +1,333 @@
+/* About page specific styles.
+   Assumes base layout, .container, .btn, .btn-ghost, typography
+   are already defined in styles.css.
+*/
+
+/* Hero */
+
+.about-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, #f5f7ff, #ffffff);
+}
+
+.about-hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1 1 280px;
+}
+
+.about-label {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.75;
+}
+
+.about-hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-hook {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.about-bio {
+  max-width: 34rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.about-specialties {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.about-specialties li {
+  font-size: 0.9rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.about-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Side card (no images) */
+
+.about-info-box {
+  background: #ffffff;
+  padding: 1.8rem 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.04);
+  max-width: 380px;
+}
+
+.info-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.info-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+}
+
+.info-list li {
+  font-size: 0.95rem;
+  margin-bottom: 0.45rem;
+  line-height: 1.45;
+}
+
+.info-note {
+  font-size: 0.8rem;
+  opacity: 0.65;
+  margin-top: 0.5rem;
+}
+
+
+/* Stats */
+
+.about-stats {
+  padding: 2.5rem 0;
+  background: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Coverage */
+
+.about-coverage {
+  padding: 3rem 0;
+}
+
+.about-coverage h2 {
+  margin-bottom: 1.5rem;
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.coverage-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.03);
+}
+
+.coverage-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Team section (icon-based, not dense) */
+
+.team-clean {
+  padding: 3rem 0;
+  background: #fafbff;
+}
+
+.team-title {
+  font-size: 1.9rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+.team-subtitle {
+  opacity: 0.8;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 34rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-clean-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.6rem;
+}
+
+.team-item {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.team-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.team-role {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 0.2rem;
+}
+
+.team-id {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Credibility */
+
+.about-credibility {
+  padding: 3rem 0;
+}
+
+.about-credibility h2 {
+  margin-bottom: 1rem;
+}
+
+.cred-list {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.cred-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Contact */
+
+.about-contact {
+  padding: 3rem 0 3.5rem;
+  background: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.contact-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.contact-text {
+  max-width: 30rem;
+  margin-bottom: 1rem;
+}
+
+.contact-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-meta li {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact-actions {
+  min-width: 230px;
+  padding-left: 200px;
+}
+
+.contact-note {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  margin-top: 0.4rem;
+}
+
+.about-social {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.social-links a {
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+
+/* Footer tweak */
+
+.site-footer {
+  padding: 1.5rem 0 2rem;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding-top: 3rem;
+  }
+
+  .about-hero-inner {
+    gap: 2rem;
+  }
+
+  .about-side-card {
+    padding: 1.25rem 1.3rem;
+  }
+
+  .contact-inner {
+    flex-direction: column;
+  }
+}
