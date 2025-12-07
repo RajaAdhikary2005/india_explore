@@ -1,6 +1,7 @@
 // ==============================
 // Destinations page logic
 // - Category filters (Spiritual / Hill / Beach / City / Heritage)
+// - Region filters via "View places" buttons (North / South / East / West)
 // - Search
 // - "Load more" button
 // ==============================
@@ -20,6 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const batchSize = 6;        // load N more when button clicked
   let visibleCount = 0;
   let filteredCards = cards.slice();
+
+  // region names that should match data-region
+  const REGION_FILTERS = ["north", "south", "east", "west"];
 
   // ---- HELPERS ----
   function hideCard(card) {
@@ -52,13 +56,27 @@ document.addEventListener("DOMContentLoaded", () => {
     filteredCards = cards.filter((card) => {
       const cat = (
         card.getAttribute("data-category") ||
+        ""
+      ).trim().toLowerCase();
+
+      const region = (
         card.getAttribute("data-region") ||
         ""
       ).trim().toLowerCase();
 
       const title = (card.querySelector("h3")?.innerText || "").toLowerCase();
 
-      const categoryOk = activeCategory === "all" || activeCategory === cat;
+      // decide matching: if activeCategory is one of the region filters,
+      // match against data-region. Otherwise match against data-category.
+      let categoryOk;
+      if (activeCategory === "all") {
+        categoryOk = true;
+      } else if (REGION_FILTERS.includes(activeCategory)) {
+        categoryOk = region === activeCategory;
+      } else {
+        categoryOk = activeCategory === cat;
+      }
+
       const searchOk = !searchTerm || title.includes(searchTerm);
 
       return categoryOk && searchOk;

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>404 — Page Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Redirect to homepage after 3 seconds -->
+  <meta http-equiv="refresh" content="3; url=index.html">
+
+  <style>
+    :root{
+      --bg1: #fff3cd;
+      --bg2: #f8d7da;
+      --accent: #856404;
+      --accent-dark: #721c24;
+      --muted: #6c757d;
+      --card-bg: #fffef9;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      background: linear-gradient(135deg,var(--bg1) 0%, var(--bg2) 100%);
+      color:var(--accent);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .card{
+      width: min(720px, 92%);
+      background: var(--card-bg);
+      border: 1px solid rgba(0,0,0,0.04);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      border-radius: 12px;
+      padding: 28px;
+      text-align:center;
+    }
+
+    h1{
+      margin:0 0 8px 0;
+      font-size: clamp(28px, 4vw, 48px);
+      color:var(--accent-dark);
+      letter-spacing: -0.02em;
+    }
+
+    p.lead{
+      margin:0 0 18px 0;
+      color:var(--muted);
+      font-size: 16px;
+    }
+
+    .loader{
+      width:56px;
+      height:56px;
+      margin:18px auto 12px auto;
+      border-radius:50%;
+      border:6px solid rgba(0,0,0,0.06);
+      border-top-color: var(--accent-dark);
+      animation:spin 0.9s linear infinite;
+    }
+
+    @keyframes spin{ to { transform: rotate(360deg); } }
+
+    .actions{
+      margin-top:14px;
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .btn-primary{
+      background:var(--accent-dark);
+      color:#fff;
+    }
+
+    .btn-muted{
+      background:transparent;
+      color:var(--accent-dark);
+      border:1px solid rgba(0,0,0,0.06);
+    }
+
+    .small{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Respect users who prefer reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      .loader{ animation: none; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <h1 id="title">404 — Page not found</h1>
+
+    <div class="loader" aria-hidden="true"></div>

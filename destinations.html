@@ -54,65 +54,85 @@
       </div>
     </section>
 
-    <!-- Explore by Region (cards) -->
-    <section class="categories">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Explore by Region</h2>
-          <p>Start with the part of India that excites you most.</p>
+<!-- Explore by Region (cards) -->
+<section class="categories">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Explore by Region</h2>
+      <p>Start with the part of India that excites you most.</p>
+    </div>
+
+    <div class="categories-grid">
+      <!-- North -->
+      <article class="category-card" data-region="north" aria-labelledby="north-title">
+        <div class="category-image north-india" style="background-image:url('images/north-india.jpg')" role="img" aria-hidden="true"></div>
+        <div class="category-body">
+          <h3 id="north-title">North India</h3>
+          <p>Himalayas, Ladakh, Himachal, Uttarakhand, Delhi.</p>
+          <div class="category-actions" style="margin-top:0.6rem;">
+            <button type="button"
+                    class="btn btn-ghost filter-pill"
+                    data-filter="north"
+                    aria-label="View places in North India">
+              View places
+            </button>
+          </div>
         </div>
+      </article>
 
-        <div class="categories-grid">
-          <!-- North -->
-          <article class="category-card">
-            <div class="category-image north-india" style="background-image:url('images/north-india.jpg')"></div>
-            <div class="category-body">
-              <h3>North India</h3>
-              <p>Himalayas, Ladakh, Himachal, Uttarakhand, Delhi.</p>
-              <div style="margin-top:0.6rem;">
-                <button class="filter-pill" data-filter="north">View places</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- South -->
-          <article class="category-card">
-            <div class="category-image south-india" style="background-image:url('images/south-india.jpg')"></div>
-            <div class="category-body">
-              <h3>South India</h3>
-              <p>Kerala backwaters, temples, and coastal towns.</p>
-              <div style="margin-top:0.6rem;">
-                <button class="filter-pill" data-filter="south">View places</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- East -->
-          <article class="category-card">
-            <div class="category-image east-india" style="background-image:url('images/east-india.jpg')"></div>
-            <div class="category-body">
-              <h3>East India</h3>
-              <p>Meghalaya, Sikkim, Bengal, and tea gardens.</p>
-              <div style="margin-top:0.6rem;">
-                <button class="filter-pill" data-filter="east">View places</button>
-              </div>
-            </div>
-          </article>
-
-          <!-- West -->
-          <article class="category-card">
-            <div class="category-image west-india" style="background-image:url('images/west-india.jpg')"></div>
-            <div class="category-body">
-              <h3>West India</h3>
-              <p>Rajasthan forts, Gujarat culture, and Goa beaches.</p>
-              <div style="margin-top:0.6rem;">
-                <button class="filter-pill" data-filter="west">View places</button>
-              </div>
-            </div>
-          </article>
+      <!-- South -->
+      <article class="category-card" data-region="south" aria-labelledby="south-title">
+        <div class="category-image south-india" style="background-image:url('images/south-india.jpg')" role="img" aria-hidden="true"></div>
+        <div class="category-body">
+          <h3 id="south-title">South India</h3>
+          <p>Kerala backwaters, temples, and coastal towns.</p>
+          <div class="category-actions" style="margin-top:0.6rem;">
+            <button type="button"
+                    class="btn btn-ghost filter-pill"
+                    data-filter="south"
+                    aria-label="View places in South India">
+              View places
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </article>
+
+      <!-- East -->
+      <article class="category-card" data-region="east" aria-labelledby="east-title">
+        <div class="category-image east-india" style="background-image:url('images/east-india.jpg')" role="img" aria-hidden="true"></div>
+        <div class="category-body">
+          <h3 id="east-title">East India</h3>
+          <p>Meghalaya, Sikkim, Bengal, and tea gardens.</p>
+          <div class="category-actions" style="margin-top:0.6rem;">
+            <button type="button"
+                    class="btn btn-ghost filter-pill"
+                    data-filter="east"
+                    aria-label="View places in East India">
+              View places
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- West -->
+      <article class="category-card" data-region="west" aria-labelledby="west-title">
+        <div class="category-image west-india" style="background-image:url('images/west-india.jpg')" role="img" aria-hidden="true"></div>
+        <div class="category-body">
+          <h3 id="west-title">West India</h3>
+          <p>Rajasthan forts, Gujarat culture, and Goa beaches.</p>
+          <div class="category-actions" style="margin-top:0.6rem;">
+            <button type="button"
+                    class="btn btn-ghost filter-pill"
+                    data-filter="west"
+                    aria-label="View places in West India">
+              View places
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
     <!-- Featured / full destinations grid -->
     <section class="destinations-list">
